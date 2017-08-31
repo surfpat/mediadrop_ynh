@@ -39,8 +39,8 @@ ynh_app_setting_set $app is_public $is_public
 
 # Install python-virtualenv and all dependencies
 sudo apt-get update
-sudo apt-get -y install libjpeg-dev zlib1g-dev libfreetype6-dev libmysqlclient-dev
-sudo apt-get -y install python-setuptools python-virtualenv python-dev python-pip
+sudo apt-get -y install libjpeg-dev zlib1g-dev libfreetype6-dev libmysqlclient-dev python-dev
+sudo apt-get -y install python-setuptools python-virtualenv python-pip
 
 GENERATE_DB $app	# Create a database and a dedicated user in the app name
 
